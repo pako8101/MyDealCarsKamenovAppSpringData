@@ -1,18 +1,21 @@
 package softuni.exam.models.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "cars")
 public class Car extends BaseEntity{
-    @Column
+    @Column(length = 20)
     private String make;
+    @Column(length = 20)
     private String model;
+    @Column
     private Integer kilometers;
+    @Column(name = "registered_on")
 
     private LocalDate registeredOn;
 
