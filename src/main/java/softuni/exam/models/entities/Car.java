@@ -1,10 +1,9 @@
 package softuni.exam.models.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
 @Table(name = "cars")
@@ -18,6 +17,8 @@ public class Car extends BaseEntity{
     @Column(name = "registered_on")
 
     private LocalDate registeredOn;
+    @OneToMany(mappedBy = "car",fetch = FetchType.EAGER)
+    private Set<Picture> pictures;
 
     public Car() {
     }
