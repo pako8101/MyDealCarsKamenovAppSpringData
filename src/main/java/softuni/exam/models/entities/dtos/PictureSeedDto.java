@@ -2,7 +2,7 @@ package softuni.exam.models.entities.dtos;
 
 import com.google.gson.annotations.Expose;
 
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Size;
 
 public class PictureSeedDto {
     @Expose

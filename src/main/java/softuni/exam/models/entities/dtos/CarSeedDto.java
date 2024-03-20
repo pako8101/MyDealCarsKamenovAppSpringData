@@ -2,8 +2,8 @@ package softuni.exam.models.entities.dtos;
 
 import com.google.gson.annotations.Expose;
 
-import javax.validation.constraints.Positive;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Size;
 
 public class CarSeedDto {
 
@@ -16,6 +16,7 @@ public class CarSeedDto {
     private String model;
 
     @Expose
+    @Positive
     private Integer kilometers;
     @Expose
     @Positive

@@ -1,6 +1,6 @@
 package softuni.exam.util;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 
 

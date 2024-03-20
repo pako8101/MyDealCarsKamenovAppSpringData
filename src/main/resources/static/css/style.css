@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url("/pics/1.jpg") no-repeat center center fixed;
+    background: url("/pics/porsh.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -15,15 +15,22 @@ body {
 .my-hr {
 	width: 50%;
 }
-
+.bg-info{
+    background-color: steelblue!important;
+}
 .myBackgroundColor{
-    background-color: #5bc0de;
+    background-color: transparent;
 }
 
 .jumbotron-background {
 
-    background: url("/pics/2.jpg") no-repeat center transparent ;
+    background: url("/pics/dollars.jpg") no-repeat center transparent ;
     color: white;
+    margin: 3rem 0 0 10rem;
+    display: flex;
+align-items: center;
+    width: 70%;
+    height: 50%;
 }
 
 .hr-background {

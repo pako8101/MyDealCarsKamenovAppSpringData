@@ -11,7 +11,7 @@ import softuni.exam.service.OfferService;
 import softuni.exam.service.PictureService;
 import softuni.exam.service.SellerService;
 
-import javax.xml.bind.JAXBException;
+import jakarta.xml.bind.JAXBException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 

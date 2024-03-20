@@ -1,6 +1,6 @@
 package softuni.exam.models.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @MappedSuperclass
 public abstract class BaseEntity {

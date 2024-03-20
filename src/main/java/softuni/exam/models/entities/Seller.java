@@ -1,7 +1,9 @@
 package softuni.exam.models.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import softuni.exam.models.entities.enums.Rating;
+
+
 
 @Entity
 @Table(name = "sellers")

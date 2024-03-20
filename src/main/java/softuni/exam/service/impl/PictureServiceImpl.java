@@ -18,7 +18,7 @@ import java.util.Arrays;
 
 @Service
 public class PictureServiceImpl implements PictureService {
-    private static String PICTURES_FILE_PATH = "files/json/pictures.json";
+    private static String PICTURES_FILE_PATH = "C:\\Users\\Plamen Kamenov\\Desktop\\MyPrograming\\exercises\\SpringData\\MyDealAppSpringData\\MyDealKamenovAppSpringData\\src\\main\\resources\\files\\json\\pictures.json";
     private final PictureRepository pictureRepository;
     private final ModelMapper modelMapper;
     private final ValidationUtil validationUtil;

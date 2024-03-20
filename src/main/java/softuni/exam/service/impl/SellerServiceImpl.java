@@ -3,7 +3,7 @@ package softuni.exam.service.impl;
 import org.springframework.stereotype.Service;
 import softuni.exam.service.SellerService;
 
-import javax.xml.bind.JAXBException;
+import jakarta.xml.bind.JAXBException;
 import java.io.IOException;
 @Service
 public class SellerServiceImpl implements SellerService {
