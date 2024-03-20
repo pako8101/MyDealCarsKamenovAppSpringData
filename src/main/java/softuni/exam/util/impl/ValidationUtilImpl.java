@@ -1,10 +1,11 @@
-package softuni.exam.util;
+package softuni.exam.util.impl;
 
 import org.springframework.stereotype.Component;
 
 import jakarta.validation.Validator;
 
 import jakarta.validation.Validation;
+import softuni.exam.util.ValidationUtil;
 
 @Component
 public class ValidationUtilImpl implements ValidationUtil {

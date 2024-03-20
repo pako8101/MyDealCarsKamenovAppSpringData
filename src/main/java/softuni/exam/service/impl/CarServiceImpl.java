@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
-import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
@@ -55,11 +54,7 @@ public class CarServiceImpl implements CarService {
                 .filter(carSeedDto -> {
                     boolean isValid = validationUtil.isValid(carSeedDto);
 
-                    sb.append(isValid ? String.format("Successfully imported - %s - %s",
-                                    carSeedDto.getMake(), carSeedDto.getModel()) :
-                                    "Invalid car")
-                            .append(System.lineSeparator());
-                    return isValid;
+                    return validDto(carSeedDto, sb, isValid);
 
                 }).
                 map(carSeedDto -> modelMapper.map(carSeedDto, Car.class))
@@ -72,6 +67,14 @@ public class CarServiceImpl implements CarService {
 
 
         return sb.toString().trim();
+    }
+
+    private static boolean validDto(CarSeedDto carSeedDto, StringBuilder sb, boolean isValid) {
+        sb.append(isValid ? String.format("Successfully imported - %s - %s",
+                        carSeedDto.getMake(), carSeedDto.getModel()) :
+                        "Invalid car")
+                .append(System.lineSeparator());
+        return isValid;
     }
 
     @Override
